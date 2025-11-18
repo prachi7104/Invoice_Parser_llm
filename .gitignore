@@ -179,3 +179,31 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Secrets (never commit)
+.env
+*.env
+.env.*
+
+# Temporary and sensitive data
+tmp/
+processed/
+decrypted/
+uploads/
+cache/
+invoices_data/
+
+# Log files
+*.log
+
+# Model weights (if any ML models exist)
+*.pt
+*.bin
+*.gguf
+*.safetensors
+*.h5
+*.ckpt
+
+# Local output/results
+output/
+results/
